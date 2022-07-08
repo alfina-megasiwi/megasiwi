@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar';
 import store from './store';
 import { useState } from 'react';
+import Website from './pages/Website/Website';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,10 @@ function App() {
           <div className='content'>
             <Routes>
               <Route path='/' element={<Home/>} />
+              <Route path='/website-projects' element={<Website/>} />
+              <Route path='/blog' element={<Website/>} />
+              <Route path='/other-projects' element={<Website/>} />
+              <Route path='/certificate' element={<Website/>} />
             </Routes>
           </div>
         </div>

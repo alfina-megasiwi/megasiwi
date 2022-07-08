@@ -1,0 +1,26 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+.website-sect-2-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.website-sect-3-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.website-sect-2-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-sect-2-icon img{
+    width: 20rem;
+}
