@@ -148,6 +148,7 @@
     background-color: var(--wkd-white);
     width: 100%;
     padding: 50px 10vw;
+    margin-bottom: -2rem;
 }
 
 .wkd-home-sect-3-container .home-video-sect {
@@ -241,3 +242,14 @@
 .btn{
 	box-shadow: none !important
 }
+
+.background-strip{
+    background-image: url("background.svg");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+}
+
+.website-projects{
+    margin-bottom: 4rem;
+}
+

@@ -2,7 +2,7 @@ import './App.css';
 import { fetch_user } from './util/prerender';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home'
+import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar';
 import store from './store';
 import { useState } from 'react';

@@ -2,6 +2,9 @@ import './Home.css'
 import Zepeto from './fina.png'
 import { connect } from 'react-redux';
 import { FaFile, FaGithub, FaGitlab, FaLinkedin} from "react-icons/fa";
+import React from "react";
+import Slider from '../../components/Slider/Slider';
+
 const Home = () => {
     return (
         <div className="remindme-home-sect-2-bg">
@@ -32,12 +35,14 @@ const Home = () => {
                     </iframe>
                 </div>
             </div>
-            {/* <div className="wkd-home-sect-3-container">
-                <div class="video-sect video">Website Projects</div>
-                <div className="home-video-sect">
-
+            <div className="wkd-home-sect-3-container background-strip">
+                <div className='website-projects'>
+                    <div class="video-sect video">Website Projects</div>
+                    <div className="home-video-sect">
+                        <Slider/>
+                    </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 }
