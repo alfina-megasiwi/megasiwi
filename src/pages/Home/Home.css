@@ -245,8 +245,9 @@
 
 .background-strip{
     background-image: url("background.svg");
-    background-repeat: repeat-y;
     background-repeat: repeat-x;
+    background-position: 0% 50%;
+
 }
 
 .website-projects{
