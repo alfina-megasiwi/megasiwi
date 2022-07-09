@@ -4,7 +4,6 @@ import BtnSlider from './BtnSlider'
 import dataSlider from './dataSlider'
 
 export default function Slider() {
-    console.log(dataSlider.length);
     const [slideIndex, setSlideIndex] = useState(1)
 
     const nextSlide = () => {
@@ -31,7 +30,7 @@ export default function Slider() {
 
     useEffect(()=>{
       const interval = setInterval(()=>{
-          nextSlide();        
+          nextSlide();
       }, 3000);
       return () => clearInterval(interval);
     });
@@ -40,12 +39,12 @@ export default function Slider() {
         <div className='slider'>
             {dataSlider.map((obj, index) => {
                 return (
-                    <div
-                    key={obj.id}
-                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <a href="#" target="_blank" rel="noreferrer" >
+                    <div className='contain'>
+                        <div
+                        key={obj.id}
+                        className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
                             <img src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.svg`} />
-                        </a>
+                        </div>
                     </div>
                 )
             })}
