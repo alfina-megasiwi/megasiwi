@@ -1,7 +1,7 @@
 import './Home.css'
 import Zepeto from './fina.png'
 import { connect } from 'react-redux';
-import { FaFile, FaGithub, FaGitlab, FaLinkedin} from "react-icons/fa";
+import { FaMediumM, FaFile, FaGithub, FaGitlab, FaLinkedin} from "react-icons/fa";
 import React from "react";
 import Slider from '../../components/Slider/Slider';
 
@@ -15,7 +15,8 @@ const Home = () => {
                 <div className="remindme-home-sect-2-text">
                     <h1 className="remindme-home-small-headings">Hello, my name is</h1>
                     <h1 className="remindme-home-headings">Alfina Megasiwi</h1>
-                    <a href='https://drive.google.com/file/d/1V7iQ4AytyBSwstl8MzuDBUJ2uqMR8fEF/view?usp=sharing' target="_blank" rel="noreferrer" button type="button" class="btn portofolio cv"><FaFile style={{marginRight: "5px", marginTop: "-3px"}}/>Curriculum Vitae</a>
+                    <a href='https://drive.google.com/file/d/1V7iQ4AytyBSwstl8MzuDBUJ2uqMR8fEF/view?usp=sharing' target="_blank" rel="noreferrer" button type="button" class="btn portofolio cv"><FaFile style={{marginRight: "5px", marginTop: "-3px"}}/>CV</a>
+                    <a href='https://medium.com/@alfnms'  target="_blank" rel="noreferrer" button type="button" class="btn portofolio github"><FaMediumM style={{marginRight: "5px", marginTop: "-3px"}}/>Medium</a>
                     <a href='http://github.com/alfina-megasiwi'  target="_blank" rel="noreferrer"  button type="button" class="btn portofolio github"><FaGithub style={{marginRight: "5px", marginTop: "-3px"}}/>Github</a>
                     <a href='http://gitlab.cs.ui.ac.id/alfina.megasiwi'  target="_blank" rel="noreferrer" button type="button" class="btn portofolio gitlab"><FaGitlab style={{marginRight: "5px", marginTop: "-3px"}}/>Gitlab</a>
                     <a href='http://linkedin.com/in/alfina-megasiwi'  target="_blank" rel="noreferrer" button type="button" class="btn portofolio linkedin"><FaLinkedin style={{marginRight: "5px", marginTop: "-3px"}}/>LinkedIn</a>
@@ -36,7 +37,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="wkd-home-sect-3-container background-strip">
-                <div className='website-projects'>
+                <div className='website-projects' id='projects'>
                     <div class="video-sect video">Website Projects</div>
                     <div className="home-video-sect">
                         <Slider/>

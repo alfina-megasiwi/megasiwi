@@ -6,11 +6,11 @@ const Navbar = () => {
     return (
         <div className="remindme-navbar-container">
             <nav className="remindme-navbar d-flex">
-                <a href="/" button type="button" class="btn item p-2 flex-fill">Home</a>
-                <a href="/website-projects" button type="button" class="btn item p-2 flex-fill">Website Projects</a>
-                <a href='/blog' type="button" class="btn item p-2 flex-fill">Blog</a>
+                {/* <a href="/" button type="button" class="btn item p-2 flex-fill">Home</a> */}
+                <a href="#projects" button type="button" class="btn item p-2 flex-fill">Website Projects</a>
+                {/* <a href='/blog' type="button" class="btn item p-2 flex-fill">Blog</a>
                 <a href='/other-projects' type="button" class="btn item p-2 flex-fill">Other Projects</a>
-                <a href='/certificate' type="button" class="btn item p-2 flex-fill">Certificate</a>
+                <a href='/certificate' type="button" class="btn item p-2 flex-fill">Certificate</a> */}
             </nav>
         </div>
     );
